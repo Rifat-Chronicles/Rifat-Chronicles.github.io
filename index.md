@@ -7,4 +7,4 @@ title: Rifat's Blog
 This is my first post about **Deep Learning** and **Hiking**.
 
 ## Recent Projects
-* [My KNN Homework](report_rbr.md)
+* [My KNN Homework](report_rbr.html)
