@@ -1,4 +1,4 @@
-# Add this line at the VERY TOP to fix the "Unknown tag" error
+# Fix for the "include_cached" build error
 minimal_mistakes_external_repository: true
 
 remote_theme: "mmistakes/minimal-mistakes"
@@ -6,6 +6,12 @@ minimal_mistakes_skin: "air"
 title: "***Rifat Chronicles***"
 url: "https://rifat-chronicles.github.io"
 baseurl: ""
+
+# This creates your beautiful sidebar
+author:
+  name: "Rifat"
+  bio: "***PhD Student at Rutgers | Wireless Researcher***"
+  location: "Highland Park, NJ"
 
 defaults:
   - scope:
