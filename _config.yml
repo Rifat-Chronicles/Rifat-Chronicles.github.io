@@ -15,7 +15,7 @@ author:
   name: "Rifat"
   bio: "PhD Student at Rutgers | Wireless Researcher"
   location: "Highland Park, NJ"
-  avatar: "/assets/images/profile.jpg"        ← ADD THIS LINE
+  avatar: "/assets/images/profile.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
