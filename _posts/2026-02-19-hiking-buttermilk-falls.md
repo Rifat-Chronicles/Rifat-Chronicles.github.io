@@ -3,7 +3,7 @@ layout: single
 title: "***Hiking the Highlands***"
 excerpt: "**An adventure through the best trails of New Jersey.**"
 header:
-  overlay_image: /assets/images/travel-hero.jpg
+  overlay_image: /assets/images/main-hero.tif
   overlay_filter: 0.5 # This makes the text easier to read over the image
   caption: "Photo credit: Rifat Chronicles"
 ---
