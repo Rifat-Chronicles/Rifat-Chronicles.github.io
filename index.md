@@ -4,7 +4,7 @@ author_profile: true
 header:
   overlay_image: /assets/images/main-hero.jpg
   overlay_filter: 0.3
-  caption: "The Rifat Chronicles: Tech & Trails"
+  caption: "The Rifat Chronicles"
 excerpt: "***Ph.D. Researcher | Global Explorer***"
 ---
 
