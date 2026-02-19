@@ -1,14 +1,11 @@
-# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # You can change this to "air", "aqua", or "contrast" later
-
-# Site Information
+minimal_mistakes_skin: "air" # Clean, white professional look
 title: "***Rifat Chronicles***"
-description: "**A journey through 6G, Embedded Systems, and the Great Outdoors.**"
+description: "**Ph.D. Research & Global Travels**"
 url: "https://rifat-chronicles.github.io"
 baseurl: ""
 
-# Author Profile (This appears in the sidebar)
+# Profile Sidebar
 author:
   name: "Rifat"
   bio: "**PhD Student at Rutgers | Wireless Researcher**"
@@ -18,15 +15,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/RifatBinRashid"
 
-# Navigation Settings
-# This tells the site to look in _data/navigation.yml for your buttons
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/RifatBinRashid"
-
-# Defaults for Posts (This makes images look beautiful automatically)
+# This ensures all posts use the correct "beautiful" layout automatically
 defaults:
   - scope:
       path: ""
@@ -34,7 +23,4 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
       share: true
-      related: true
