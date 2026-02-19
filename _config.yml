@@ -1,3 +1,40 @@
-theme: jekyll-theme-minimal
-title: Rifat's Research & Travels
-description: A blog about 6G, Embedded Systems, and Hiking.
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # You can change this to "air", "aqua", or "contrast" later
+
+# Site Information
+title: "***Rifat Chronicles***"
+description: "**A journey through 6G, Embedded Systems, and the Great Outdoors.**"
+url: "https://rifat-chronicles.github.io"
+baseurl: ""
+
+# Author Profile (This appears in the sidebar)
+author:
+  name: "Rifat"
+  bio: "**PhD Student at Rutgers | Wireless Researcher**"
+  location: "Highland Park, NJ"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/RifatBinRashid"
+
+# Navigation Settings
+# This tells the site to look in _data/navigation.yml for your buttons
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/RifatBinRashid"
+
+# Defaults for Posts (This makes images look beautiful automatically)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
