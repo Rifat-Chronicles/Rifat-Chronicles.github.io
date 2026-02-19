@@ -1,11 +1,11 @@
 ---
 layout: home
-title: "***Rifat Chronicles***"
+author_profile: true
 header:
   overlay_image: /assets/images/main-hero.jpg
-  overlay_filter: 0.4
-  caption: "Exploring 6G Research and Global Trails"
-excerpt: "**Ph.D. Student at Rutgers | Wireless Researcher | Avid Hiker**"
+  overlay_filter: 0.3
+  caption: "The Rifat Chronicles: Tech & Trails"
+excerpt: "***Ph.D. Researcher | Global Explorer***"
 ---
 
 # ***Latest Stories***
