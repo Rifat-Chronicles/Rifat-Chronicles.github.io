@@ -1,13 +1,11 @@
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
-title: "Rifat Chronicles"
+title: "***Rifat Chronicles***"
+description: "**Ph.D. Research & Global Travels**"
 url: "https://rifat-chronicles.github.io"
 baseurl: ""
 
-# This makes the "Home/About" buttons work
-modules:
-  - jekyll-remote-theme
-
+# This tells GitHub to use the "Beautiful" layout for all your blogs
 defaults:
   - scope:
       path: ""
