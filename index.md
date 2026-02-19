@@ -1,10 +1,12 @@
 ---
-layout: default
-title: Rifat's Blog
+layout: home
+title: "***Rifat Chronicles***"
+header:
+  overlay_image: /assets/images/main-hero.jpg
+  overlay_filter: 0.4
+  caption: "Exploring 6G Research and Global Trails"
+excerpt: "**Ph.D. Student at Rutgers | Wireless Researcher | Avid Hiker**"
 ---
-# Welcome to My Travel & Tech Blog
 
-This is my first post about **Deep Learning** and **Hiking**.
-
-## Recent Projects
-* [My KNN Homework](report_rbr.html)
+# ***Latest Stories***
+Welcome to my personal archive. Here, I bridge the gap between **high-frequency signals** and **high-altitude trails**.
