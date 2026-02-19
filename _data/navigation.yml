@@ -1,0 +1,8 @@
+# This creates the buttons at the top of your site
+main:
+  - title: "Home"
+    url: /
+  - title: "Recent Posts"
+    url: /year-archive/
+  - title: "About Me"
+    url: /about/
