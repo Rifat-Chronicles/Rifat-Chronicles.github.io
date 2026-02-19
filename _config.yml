@@ -1,11 +1,12 @@
+# Add this line at the VERY TOP to fix the "Unknown tag" error
+minimal_mistakes_external_repository: true
+
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 title: "***Rifat Chronicles***"
-description: "**Ph.D. Research & Global Travels**"
 url: "https://rifat-chronicles.github.io"
 baseurl: ""
 
-# This tells GitHub to use the "Beautiful" layout for all your blogs
 defaults:
   - scope:
       path: ""
