@@ -6,19 +6,23 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* RIFAT CHRONICLES - CUSTOM STYLES */
+/* RIFAT CHRONICLES - CUSTOM STYLES WITH PARALLAX */
 
-/* Make hero image HUGE - takes up most of screen */
+/* PARALLAX EFFECT on hero image */
 .page__hero--overlay {
   min-height: 85vh !important;
   height: 85vh !important;
-  padding: 18em 0 !important;
+  padding: 12em 0 !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-/* Position hero text at bottom */
+/* Less gap - position hero text closer to top */
 .page__hero-caption {
   position: absolute;
-  bottom: 8em !important;
+  bottom: 3em !important;
   left: 0;
   width: 100%;
   text-align: center;
@@ -26,21 +30,22 @@
 
 /* Darker overlay for better contrast */
 .page__hero--overlay::before {
-  opacity: 0.4 !important;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%);
+  opacity: 0.45 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
 }
 
 /* Bigger hero title */
 .page__hero .page__title {
   font-size: 3.5em !important;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  margin-bottom: 0.3em;
 }
 
 /* Bigger subtitle */
 .page__hero .page__lead {
   font-size: 1.8em !important;
   font-weight: 300;
-  margin-top: 1em;
+  margin-top: 0.5em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
@@ -49,28 +54,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Space below hero before content starts */
+/* REDUCE GAP - Less space below hero */
 #main {
-  margin-top: 4em;
-  padding-top: 2em;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Style content sections */
-.page__content h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  text-align: center;
+/* Welcome section - reduce top margin */
+.page__content > div:first-child {
+  margin-top: 2em !important;
 }
 
 /* Recent posts styling */
 .entries-list {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .archive__item {
   margin-bottom: 3em !important;
   padding-bottom: 2em;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333;
 }
 
 .archive__item:last-child {
@@ -80,19 +83,24 @@ html {
 /* Profile picture styling */
 .author__avatar img {
   border: 4px solid #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 
-.author__avatar {
-  margin-bottom: 1em;
+/* Post images - make them look good */
+.page__content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin: 2em 0;
 }
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+  /* Disable parallax on mobile for better performance */
   .page__hero--overlay {
     min-height: 70vh !important;
     height: 70vh !important;
-    padding: 10em 0 !important;
+    padding: 8em 0 !important;
+    background-attachment: scroll !important;
   }
   
   .page__hero .page__title {
@@ -118,4 +126,12 @@ html {
 
 .archive__item {
   animation: fadeInUp 0.6s ease-out;
+}
+
+/* Parallax scroll effect for sections */
+@media (min-width: 769px) {
+  .page__hero--overlay {
+    transform: translateZ(0);
+    will-change: transform;
+  }
 }
