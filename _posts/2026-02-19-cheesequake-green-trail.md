@@ -4,7 +4,7 @@ layout: single
 author_profile: true
 header:
   image: /assets/images/posts/cheesequake-green-trail/hero.jpg
-  teaser: /assets/images/posts/cheesequake-green-trail/teaser.jpg
+  teaser: /assets/images/posts/cheesequake-green-trail/hero.jpg
   caption: "The Green Trail at Cheesequake State Park"
 excerpt: "A journey through diverse ecosystems on Cheesequake's iconic Green Trail - from pine forests to freshwater swamps."
 categories:
