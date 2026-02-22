@@ -23,7 +23,7 @@ tags:
 
 Cheesequake State Park offers one of New Jersey's most unique hiking experiences. The **Green Trail** takes you through an incredible variety of ecosystems - all within a single 3.5-mile loop. This is where the pine barrens meet the hardwood forests, creating a biodiversity hotspot right here in Middlesex County.
 
-![Trail entrance and marker](/assets/images/posts/cheesequake-green-trail/trailhead.jpg)
+![Trail entrance and marker](/assets/images/posts/cheesequake-green-trail/Trailhead.jpg)
 *Starting point: The Green Trail entrance near the nature center*
 
 ---
