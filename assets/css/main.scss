@@ -6,71 +6,116 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* ==========================================================================
-   CUSTOM STYLES FOR RIFAT CHRONICLES - PARALLAX EFFECT
-   ========================================================================== */
+/* RIFAT CHRONICLES - CUSTOM STYLES */
 
-/* Parallax scrolling effect */
-.parallax-hero {
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+/* Make hero image HUGE - takes up most of screen */
+.page__hero--overlay {
+  min-height: 85vh !important;
+  height: 85vh !important;
+  padding: 18em 0 !important;
 }
 
-/* Mobile: disable parallax (can cause issues) */
-@media (max-width: 768px) {
-  .parallax-hero {
-    background-attachment: scroll !important;
-  }
+/* Position hero text at bottom */
+.page__hero-caption {
+  position: absolute;
+  bottom: 8em !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
-/* Smooth scrolling */
+/* Darker overlay for better contrast */
+.page__hero--overlay::before {
+  opacity: 0.4 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+/* Bigger hero title */
+.page__hero .page__title {
+  font-size: 3.5em !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Bigger subtitle */
+.page__hero .page__lead {
+  font-size: 1.8em !important;
+  font-weight: 300;
+  margin-top: 1em;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Smooth scrolling effect */
 html {
   scroll-behavior: smooth;
 }
 
-/* Add spacing for content sections */
-.content-section {
-  padding: 3em 2em;
-  margin-bottom: 2em;
+/* Space below hero before content starts */
+#main {
+  margin-top: 4em;
+  padding-top: 2em;
 }
 
-/* Style post previews */
+/* Style content sections */
+.page__content h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Recent posts styling */
+.entries-list {
+  margin-top: 3em;
+}
+
 .archive__item {
-  margin-bottom: 2.5em !important;
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 1.5em;
+  margin-bottom: 3em !important;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
 }
 
 .archive__item:last-child {
   border-bottom: none;
 }
 
-/* Featured images in posts */
-.page__hero-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2em;
-}
-
 /* Profile picture styling */
+.author__avatar img {
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
 .author__avatar {
-  border: 3px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 1em;
 }
 
-/* Make post images responsive */
-.page__content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 1.5em 0;
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .page__hero--overlay {
+    min-height: 70vh !important;
+    height: 70vh !important;
+    padding: 10em 0 !important;
+  }
+  
+  .page__hero .page__title {
+    font-size: 2.5em !important;
+  }
+  
+  .page__hero .page__lead {
+    font-size: 1.3em !important;
+  }
 }
 
-/* Add spacing after headings */
-.page__content h2,
-.page__content h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+/* Fade in effect when scrolling */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.archive__item {
+  animation: fadeInUp 0.6s ease-out;
 }
