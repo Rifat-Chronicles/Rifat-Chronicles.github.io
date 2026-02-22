@@ -5,8 +5,8 @@ header:
   overlay_image: /assets/images/main-hero.jpg
   overlay_filter: 0.4
   overlay_color: "#000"
-  caption: "The Rifat Chronicles"
-excerpt: "**Ph.D. Researcher | Global Explorer**<br>Bridging high-frequency signals and high-altitude trails"
+  #caption: "The Rifat Chronicles"
+#excerpt: "**Ph.D. Researcher | Global Explorer**<br>Bridging high-frequency signals and high-altitude trails"
 ---
 
 <div style="text-align: center; margin: 3em 0;">
