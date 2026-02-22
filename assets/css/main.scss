@@ -6,16 +6,71 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* Make hero image taller */
-.page__hero--overlay {
-  min-height: 100px !important;
-  padding: 10em 0 !important;
+/* ==========================================================================
+   CUSTOM STYLES FOR RIFAT CHRONICLES - PARALLAX EFFECT
+   ========================================================================== */
+
+/* Parallax scrolling effect */
+.parallax-hero {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-.page__hero-caption {
-  bottom: 3em !important;
+/* Mobile: disable parallax (can cause issues) */
+@media (max-width: 768px) {
+  .parallax-hero {
+    background-attachment: scroll !important;
+  }
 }
 
-.entries-list {
-  margin-top: 3em;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add spacing for content sections */
+.content-section {
+  padding: 3em 2em;
+  margin-bottom: 2em;
+}
+
+/* Style post previews */
+.archive__item {
+  margin-bottom: 2.5em !important;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 1.5em;
+}
+
+.archive__item:last-child {
+  border-bottom: none;
+}
+
+/* Featured images in posts */
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+/* Profile picture styling */
+.author__avatar {
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Make post images responsive */
+.page__content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+
+/* Add spacing after headings */
+.page__content h2,
+.page__content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
