@@ -3,7 +3,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
 title: "Rifat Chronicles"
 title_separator: "|"
-subtitle: "PhD Student at Rutgers | Wireless Researcher"
+subtitle: "Rutgers Ph.D | Wireless Researcher"
 name: "Rifat"
 description: "Personal blog of a PhD researcher exploring wireless communications and the world"
 url: "https://rifat-chronicles.github.io"
@@ -13,7 +13,7 @@ repository: "Rifat-Chronicles/rifat-chronicles.github.io"
 # Site Author
 author:
   name: "Rifat Bin Rashid"
-  bio: "PhD Student at Rutgers | Wireless Researcher"
+  bio: "Rutgers Ph.D | Wireless Researcher"
   location: "Highland Park, NJ"
   avatar: "/assets/images/profile.jpg"
   links:
