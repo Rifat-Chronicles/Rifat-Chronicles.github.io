@@ -16,10 +16,10 @@ author:
   bio: "Rutgers Ph.D | Wireless Researcher"
   location: "Highland Park, NJ"
   avatar: "/assets/images/profile.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@rutgers.edu"
+  #links:
+  #  - label: "Email"
+  #   icon: "fas fa-fw fa-envelope-square"
+  #    url: "mailto:your.email@rutgers.edu"
 
 # Reading Files
 include:
